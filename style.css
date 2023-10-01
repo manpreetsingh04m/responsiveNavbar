@@ -1,0 +1,62 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+}
+.brand_title{
+  font-size: 1.5rem;
+  margin: .5rem;
+}
+.navbar_link ul{
+  display:flex ;
+  margin: 0;
+  padding: 0;
+}
+.navbar_link li{
+  list-style: none;
+}
+.navbar_link li a{
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+.navbar_link li:hover{
+  background-color: #555;
+}
+.toggle_button {
+  position: absolute;
+  top: .75rem;
+  flex-direction: column;
+  right: 1rem;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle_button .bars{
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media(max-width:400px){
+  .toggle_button{
+    display: flex;
+  }
+  .navbar_link{
+    display: none;
+  }
+}
+
+
