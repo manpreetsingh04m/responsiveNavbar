@@ -36,16 +36,18 @@ body{
 }
 .toggle_button {
   position: absolute;
-  top: .75rem;
-  flex-direction: column;
+  top: 0.75rem;
   right: 1rem;
   width: 30px;
   height: 21px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.toggle_button .bars{
-  height: 3px;
+.bars {
   width: 100%;
+  height: 3px;
   background-color: white;
   border-radius: 10px;
 }
@@ -56,6 +58,24 @@ body{
   }
   .navbar_link{
     display: none;
+    width: 100%;
+  }
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar_link ul{
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar_link li{
+    text-align: center;
+  }
+  .navbar_link li a{
+    padding: 0.5rem 1rem;
+  }
+  .navbar_link.active{
+    display: flex;
   }
 }
 
